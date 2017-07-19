@@ -1,3 +1,9 @@
+.sub {
+
+vertical-align: sub;
+
+}
+
 body {
 	background-image: url("http://cdn.wallpapersafari.com/68/88/6S2ikH.jpg") !important;
 	background: green;
