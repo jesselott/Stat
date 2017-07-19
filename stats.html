@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Stats Project</title>
+	<link rel="stylesheet" type="text/css" href="stats.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/0a10f93b45.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+<strong><h1>Pass Happy? Is Rushing the Ball Losing its Place in the NFL?</h1></strong>
+<h4>Hy0 = Mu1(Recent) - Mu2(Legacy) = 0 ~ Level of significance of rushing the football was about the same 30 years ago.</h4>
+<h4>HyA = Mu1(Recent) - Mu2(Legacy) < 0 ~ Level of significance of rushing was significantly greater 30 years ago</h4>
+</div>
+<div>
+<hr>
+<h3>Data</h3>
+<table>
+
+<tr>
+<td><strong>Stat</strong></td>
+<td><strong>1984</strong></td>
+<td><strong>1985</strong></td>
+<td><strong>1986</strong></td>
+<td><strong>Legacy</strong></td>
+<td><strong>2014</strong></td>
+<td><strong>2015</strong></td>
+<td><strong>2016</strong></td>
+<td><strong>Recent</strong></td>
+
+</tr>
+<tr>
+	<td><em>Number of 1,000 yd. Rushers</em></td>
+	<td>13</td>
+	<td>16</td>
+	<td>8</td>
+	<td>12.3</td>
+	<td>13</td>
+	<td>7</td>
+	<td>12</td>	
+	<td>10.7</td>
+</tr>
+<tr>
+	<td><em>Avg yds (1000 yd. Rushers)</em></td>
+	<td>1334.8</td>
+	<td>1258.8</td>
+	<td>1390.1</td>
+	<td>1327.9</td>
+	<td>1275.6</td>
+	<td>1182.0</td>
+	<td>1221.5</td>	
+	<td>1226.4</td>
+</tr>
+<tr>
+	<td><em>Wins (Teams with 1000 yd. Rushers)</em></td>
+	<td>8.8</td>
+	<td>8.9</td>
+	<td>10.5</td>
+	<td>9.4</td>
+	<td>9.2</td>
+	<td>7.6</td>
+	<td>9.1</td>	
+	<td>8.6</td>
+</tr>
+<tr>
+	<td><em>Average Rushing Attempts (team)</em></td>
+	<td>493</td>
+	<td>487</td>
+	<td>482</td>	
+	<td>487.3</td>
+	<td>427</td>
+	<td>422</td>
+	<td>416</td>	
+	<td>421.7</td>
+</tr>
+<tr>
+	<td><em>Average Rushing Yards (team)</em></td>
+	<td>1982</td>
+	<td>1999</td>
+	<td>1899</td>
+	<td>1960</td>
+	<td>1781</td>
+	<td>1742</td>
+	<td>1743</td>	
+	<td>1755</td>
+</tr>
+<tr>
+	<td><em>Super Bowl Champ with 1,000 yd. Rusher</em></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>100%</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>	
+	<td>33%</td>
+</tr>
+<tr>
+	<td><em>Leading Rusher More Yds. than Leading Receiver</em></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>100%</td>
+	<td>33%</td>
+</tr>
+
+</table>
+</div>
+<div class="spread">
+<hr>
+<h3>Analysis 1</h3>
+<h4>Legacy vs. Recent: Number of 1,000 yd. Rushers</h4>
+<p><span id="vanish1" class="vanish">p-Value = 0.303 / This value is larger than .05, thus the null hypothesis should be accepted.  There is no significant difference in the volume of 1,000 yard rushers in the league. Mu1 = 10.7, Mu2 = 12.3 </span></p>
+<button class="btn btn-primary" id="btn1" onclick="showResults()">See Results!</button>
+<hr>
+
+<h3>Analysis 2</h3>
+<h4>Legacy vs. Recent: Rushing Attempts</h4>
+<p><span id="vanish2" class="vanish">p-Value = <.0001 / Null hypothesis should be rejected. There were significantly more rushing attempts 30 years ago in the league. Mu1 = 487.3, Mu2 = 421.7</span></p>
+<button class="btn btn-primary" id="btn2">See Results!</button>
+<hr>
+<h3>Analysis 3</h3>
+<h4>Legacy vs. Recent: Total Wins for Teams with a 1,000 yd. Rusher</h4>
+<p><p><span id="vanish3" class="vanish">p-Value = 0.184 / This value is larger than .05, thus the null hypothesis should be accepted. There is no significant difference between wins for teams with 1,000 yard rushers both past and present.<br>Mu1 = 10.7, Mu2 = 12.3</span></p></p>
+<button class="btn btn-primary" id="btn3">See Results!</button>
+<hr>
+<h3>Analysis 4</h3>
+<h4>Legacy vs. Recent: Super Bowl Champion has 1,000 yd. Rusher on Roster</h4>
+<p><p><span id="vanish4" class="vanish">p-Value = 0.06 / This value is larger than .05, thus the null hypothesis should be accepted.  However, this bit of data is misleading, due to the extremely small sample size and the extremely close proximity to 95%.<br>Mu1 = .333, Mu2 = 1.000</span></p></p>
+<button class="btn btn-primary" id="btn4">See Results!</button>
+<hr>
+</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="stats.js"></script>
+</div>
+</body>
+</html>
