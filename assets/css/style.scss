@@ -1,0 +1,85 @@
+@import "{{ site.theme }}";
+
+body {
+	background-image: url("http://cdn.wallpapersafari.com/68/88/6S2ikH.jpg") !important;
+	background: green;
+	color: white !important;
+	text-align: left;
+	text-shadow: -3px 2px 3px rgba(0, 55, 53, 0.88);
+}
+
+hr.style17 {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+hr.style17:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+.jumbotron {
+	color: white !important;
+	background-color: #891016 !important;
+	border-radius: 20px;
+	padding: 10px;
+	
+}
+
+.vanish {
+	display: none;
+	
+}
+
+.show {
+	display: block;
+	background-color: azure;
+	color: #891016;
+	font-weight: bolder;
+	margin-right: 55%;
+	padding: 10px;
+	border-radius: 15px;
+	text-shadow: none;
+}
+
+
+
+h3 {
+	color: white !important;
+	background-color: #891016 !important;
+	border-radius: 20px;
+	padding: 10px;
+	margin-right: 80%;
+	text-align: center;
+}
+
+strong {
+	color: gold;
+	font-size: 15pt;
+}
+
+td {
+	border: white 2px solid;
+	font-weight: bold;
+	padding: 5px !important;
+}
+
+table {
+	margin: auto auto;
+	color: white !important;
+	background-color: rgba(0, 55, 53, 0.3) !important;
+	
+
+}
+
+.spread td {
+	margin: 5px;
+}
