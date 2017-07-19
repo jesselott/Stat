@@ -17,3 +17,8 @@ $('#btn4').click(function(){
   $('#vanish4').toggleClass('show');
   
 });
+
+$('#btn5').click(function(){
+  $('#conclusion').toggleClass('show');
+  
+});
