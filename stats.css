@@ -82,3 +82,8 @@ table {
 .conclusion {
 	color:gold !important;	
 }
+
+.footer {
+	background-color: rgba(0, 55, 53, 0.3) !important;
+	padding-bottom: 10px;
+}
