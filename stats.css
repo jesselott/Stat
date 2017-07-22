@@ -8,6 +8,7 @@ font-size: 12px;
 body {
 	background-image: url("http://cdn.wallpapersafari.com/68/88/6S2ikH.jpg") !important;
 	background: green;
+	background-size: cover;
 	color: white !important;
 	text-align: left;
 	text-shadow: -3px 2px 3px rgba(0, 55, 53, 0.88);
